@@ -2,11 +2,86 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+  	<!-- шапка сайта -->
+  	<header class="main-header">
+		<nav class="main-navigator">
+			<a class="main-header-logo">
+				<img src="img/index-logo.svg" alt="Нёрдс">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="studio.html">студия</a></li>
+				<li><a href="clients.html">клиенты</a></li>
+				<li><a href="catalog.html">магазин</a></li>
+				<li><a href="contacts.html">контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li><a href="basket.html">корзина</a></li>
+			</ul>
+		</nav>
+  	</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	<!-- основное содержимое сайта --> 
+	<main class="container">
+		<h1 class="visually-hidden">Нёрдс</h1>
 
+		<div class="main-about-slider">
+			<!-- на данный момент не требуется -->
+		</div>
+
+		<section class="services">
+			<h2 class="visually-hidden">Услуги</h2>
+			<ul class="services-list">
+				<li class="service-item">
+					<img src="img/web-sites.svg" alt="веб-сайты">
+					<h3>веб-сайты</h3>
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<span class="button service-item-button service-item-button-website">Заказать</span>
+				</li>
+				<li class="service-item">
+					<img src="img/mobileapps.svg" alt="приложения">
+					<h3>приложения</h3>
+					<p>Покорите топ-10 приложений в Appstore и Google Play</p>
+					<span class="button service-item-button service-item-button-mobileapp">Заказать</span>
+				</li>
+				<li class="service-item">
+					<img src="img/presentation.svg" alt="презентации">
+					<h3>презентации</h3>
+					<p>Вы даже не подозреваете насколько вы изумительны!</p>
+					<span class="button service-item-button service-item-button-presentation">Заказать</span>
+				</li>
+			</ul>
+		</section>
+
+		<div class="main-about-large">
+			<!-- на данный момент не требуется -->
+		</div>
+		
+		<div class="main-examples">
+			<!-- на данный момент не требуется -->
+		</div>
+
+		<div class="main-map">
+			<!-- на данный момент не требуется -->
+		</div>
+	</main>
+
+	<!-- подвал сайта -->
+	<footer class="main-footer"> 
+		<div class="footer-social">
+			<ul>
+				<li><a href="#" class="social-button">VK</a></li>
+				<li><a href="#" class="social-button">Facebook</a></li>
+				<li><a href="#" class="social-button">Instagram</a></li>
+			</ul>
+		</div>
+		<p class="footer">
+			<b>Давайте дружить, это выгодно!</b>
+			<span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
+		</p>
+	</footer>
   </body>
 </html>
