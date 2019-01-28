@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+  	<!-- шапка сайта расширенная -->
+  	<header class="main-header">
+		<nav class="main-navigator">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/index-logo.svg" alt="Нёрдс">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="studio.html">студия</a></li>
+				<li><a href="clients.html">клиенты</a></li>
+				<li><a href="catalog.html">магазин</a></li>
+				<li><a href="contacts.html">контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li><a href="basket.html">корзина</a></li>
+			</ul>
+		</nav>
+		<h1 class="main-header-logo-large">Магазин готовых шаблонов</h1>
+  	</header>
+
+	<!-- основное содержимое сайта --> 
+	<main class="container">
+		<nav class="catalog-upper-navigator">
+			<!-- на данный момент не требуется -->
+		</nav>
+
+		<!-- левый навигатор фильтров --> 
+		<nav class="catalog-left-navigator"> 
+
+			<section class="catalog-left-navigator-grid"><!-- TODO: уточнить у наставника-->
+				<h2 class="visually-hidden">Тип сетки</h2>
+				<b>сетка:</b> <br>
+				<input type="radio" name="grid" value="adaptive">Адаптивная<br>
+				<input type="radio" name="grid" value="fixed">Фиксированная<br>
+				<input type="radio" name="grid" value="flexible">Резиновая<br>
+			</section>
+
+			<section class="catalog-left-navigator-features"><!-- TODO: уточнить у наставника -->
+				<h2 class="visually-hidden">Фильтры</h2>
+				<b>особенности:</b> <br>
+				<input type="checkbox" name="features" value="adaptive">Слайдер<br>
+				<input type="checkbox" name="features" value="block-advantages">Блок преимуществ<br>
+				<input type="checkbox" name="features" value="news">Новости<br>
+				<input type="checkbox" name="features" value="gallery">Галерея<br>
+				<input type="checkbox" name="features" value="basket">Корзина<br>
+			</section>
+			<span class="button catalog-left-navigator-button-show">Показать</span>
+		</nav>
+		
+		<section class="goods-results">
+			<h2 class="visually-hidden">Результат отбора</h2>
+			<img src="img/sedona.svg" alt="Седона">
+			<img src="img/pink.svg" alt="Пинк">
+			<img src="img/borodinsky.svg" alt="Бородинский">
+			<img src="img/mishka.svg" alt="Мишка">
+			<img src="img/sedona.svg" alt="Седона">
+			<img src="img/kvast.svg" alt="Кваст">
+		</section>
+
+
+		<div class="catalog-pages">
+			<!-- на данный момент не требуется -->
+		</div>
+
+		<div class="main-map">
+			<!-- на данный момент не требуется -->
+		</div>
+	</main>
+
+	<!-- подвал сайта -->
+	<footer class="main-footer"> 
+		<div class="footer-social">
+			<ul>
+				<li><a href="#" class="social-button">VK</a></li>
+				<li><a href="#" class="social-button">Facebook</a></li>
+				<li><a href="#" class="social-button">Instagram</a></li>
+			</ul>
+		</div>
+		<p class="footer">
+			<b>Давайте дружить, это выгодно!</b>
+			<span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
+		</p>
+	</footer>
+  </body>
+</html>
