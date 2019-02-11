@@ -2,14 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
   	<!-- шапка сайта -->
   	<header class="main-header">
 		<nav class="main-navigator">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="#">
 				<img src="img/nerds-logo.svg" alt="Нёрдс">
 			</a>
 			<ul class="site-navigation">
@@ -20,7 +23,7 @@
 			</ul>
 			<ul class="user-navigation">
 				<li>
-					<img src="img/cart-icon.svg">
+					<img src="img/cart-icon.svg" alt="иконка корзины">
 					<a href="basket.html">корзина</a>
 				</li>
 			</ul>
@@ -86,8 +89,11 @@
 				<label for="contact-us-text">Текст письма:</label>
 				<textarea id="contact-us-text" name="letter-text" placeholder="В свободной форме."></textarea>
 			</p>
-		<button class="button" type="submit">Отправить</button>		
-		<button class="button" type="submit">Закрыть</button>		
+		<button class="button button-submit" type="submit">Отправить</button>		
+		<button class="button button-close" type="button" aria-label="Закрыть"><img src="img/close-cross.svg" alt="закрыть"></button>		
+		<!-- <input type="button" name="close" class="button-close" aria-label="Закрыть"> -->
+
+
 		</form>
 	</section>
 
@@ -103,8 +109,8 @@
 			</ul>
 		</div>
 		<p class="footer">
-			<b>Давайте дружить, это выгодно!</b>
-			<span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
+			<b>Давайте дружить, это выгодно!</b><br>
+			<span>Скидка 10% для друзей из социальных сетей.</span>
 		</p>
 	</footer>
   </body>

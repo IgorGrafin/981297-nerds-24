@@ -1,12 +1,363 @@
-/*
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px; 
+    /*font-weight: 700;  как узнать  font-weight?*/
+	color: #283136;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigator {
+	font-size: 16px;
+	line-height: 24px; 
+
+	color: #283136;
+	background-color: #eeeeee;
+}
+
+.main-header-logo-large {
+	font-size: 55px;
+	line-height: 55px;
+
+	text-align: center;
+	vertical-align: center;
+	padding: 115px 0px 115px 0px;
+}
+
+.main-header-logo img {
+	opacity: 1;
+}
+
+.main-header-logo img:hover,
+.main-header-logo img:focus {
+	opacity: 0.8;
+}
+
+.main-header-logo img:active {
+	opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: #bababa;
+}
+
+.site-navigation-selected {
+	border-bottom: 2px solid #fb565a;
+}
+
+.services-list {
+	list-style: none;
+}
+
+.service-item {
+	text-align: center;
+}
+
+.service-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.modal {
+	/*display: none; а где он на макете?*/
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.modal label{
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="password"],
+.contact-us textarea {
+	/*font: inherit;*/
+	color: #000000;
+
+	background-color: #ffffff;
+	border: 2px solid #d7dcde;
+	padding: 17px 18px 14px;
+}
+
+.contact-us input[type="text"]:hover,
+.contact-us input[type="password"]:hover,
+.contact-us textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.contact-us input[type="text"]:focus,
+.contact-us input[type="password"]:focus,
+.contact-us textarea:focus {
+	border: 2px solid #000000;
+	color: #000000;
+	outline: none; /*допустимо?*/
+}
+
+.contact-us input[type="text"]:invalid,
+.contact-us input[type="password"]:invalid {
+	border: 2px solid #e74246;
+	color: #e74246;
+}
+
+.button-submit {
+	/*состояния не описаны в styleguide*/
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	background-color: #e74246;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+.button-close {
+	background-color: #ffffff;
+	border: none;
+}
+
+.button-close img {
+	opacity: 0.3;
+}
+
+.button-close img:hover {
+	opacity: 1;
+}
+
+.button-close img:active {
+	opacity: 0.1;
+}
+
+
+.service-item-button {
+	/*общие настройки ссылок "заказать"*/
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+.service-item-button-website {
+	background-color: #fb565a;
+}
+.service-item-button-website:hover,
+.service-item-button-website:focus {
+	background-color: #e74246;
+}
+
+.service-item-button-website:active {
+	background-color: #d7373b;
+	color: #e37376;
+	/*box-shadow: inset 0 2px 2px -2px #c13135; при нажатии появляется тень?*/
+}
+
+.service-item-button-mobileapp {
+	background-color: #00ca74;
+}
+
+.service-item-button-mobileapp:hover, 
+.service-item-button-mobileapp:focus {
+	background-color: #00bc6c;
+}
+
+.service-item-button-mobileapp:active {
+	background-color: #00aa62;
+	color: #4dc491;
+}
+
+.service-item-button-presentation {
+	background-color: #efc84a;
+}
+
+.service-item-button-presentation:hover, 
+.service-item-button-presentation:focus {
+	background-color: #eab534;
+}
+
+.service-item-button-presentation:active {
+	background-color: #e5a722;
+	color: #edc265;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.catalog-left-filters legend {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.catalog-left-filters ul {
+	list-style: none;
+}
+
+.catalog-left-filters label {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.catalog-left-filters-button-show {
+	font: inherit;
+	text-align: center;
+	color: #000000;
+	background-color: #eeeeee;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+.catalog-left-filters-button-show:hover,
+.catalog-left-filters-button-show:focus {
+	background-color: #dfdfdf;
+}
+
+.catalog-left-filters-button-show:active {
+	background-color: #d5d5d5;
+	color: #959595;
+}
+
+.goods-results ul {
+	list-style: none;
+}
+
+li.catalog-item div.goods-results-item-details {
+	/*display: none;*/
+	/*visibility: collapse;*/
+	opacity: 0;
+}
+
+li.catalog-item:hover div.goods-results-item-details,
+li.catalog-item:focus div.goods-results-item-details {
+/*.catalog-item-price:focus div.goods-results-item-details{*/
+	/*display: block;*/
+	/*visibility: visible;*/
+	opacity: 100;
+	/*как вернуть доступность по tab?*/
+
+}
+
+img.catalog-top-browser {
+	opacity: 0.12;
+}
+
+li.catalog-item:hover img.catalog-top-browser,
+li.catalog-item:focus img.catalog-top-browser {
+	opacity: 1;
+}
+
+div.goods-results-item-details {
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.catalog-item-header h3{
+	font: inherit;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+}
+
+
+
+.catalog-item-price {
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	background-color: #fb565a;
+	font-size: 16px;
+	line-height: 18px;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+.catalog-item-price:hover,
+.catalog-item-price:focus {
+	background-color: #e74246;
+}
+
+.catalog-item-price:active {
+	background-color: #d7373b;
+	/*тени?*/
+}
+
+
+.main-footer {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.footer b {
+	color: #000000;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.footer span {
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+.footer-social a {
+	text-align: center;
+	background-color: #e1e1e1;
+	color: #ffffff;
+}
+
+
+.footer-social ul {
+	list-style: none;
+}
+
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 } 
-*/
+
+
+
