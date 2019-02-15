@@ -12,21 +12,24 @@
   	<!-- шапка сайта -->
   	<header class="main-header">
 		<nav class="main-navigator">
-			<a class="main-header-logo" href="#">
-				<img src="img/nerds-logo.svg" alt="Нёрдс">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="studio.html">студия</a></li>
-				<li><a href="clients.html">клиенты</a></li>
-				<li><a href="catalog.html">магазин</a></li>
-				<li><a href="contacts.html">контакты</a></li>
-			</ul>
-			<ul class="user-navigation">
-				<li>
-					<img src="img/cart-icon.svg" alt="иконка корзины">
-					<a href="basket.html">корзина</a>
-				</li>
-			</ul>
+			<div class="top-container">
+				<a class="main-header-logo" href="#">
+					<img src="img/nerds-logo.svg" alt="Нёрдс">
+				</a>
+			
+				<ul class="site-navigation">
+					<li><a href="studio.html">студия</a></li>
+					<li><a href="clients.html">клиенты</a></li>
+					<li><a href="catalog.html">магазин</a></li>
+					<li><a href="contacts.html">контакты</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li>
+						<img src="img/cart-icon.svg" alt="иконка корзины">
+						<a href="basket.html">корзина</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
   	</header>
 
@@ -74,7 +77,7 @@
 			<!-- на данный момент не требуется -->
 		</section>
 
-	<section class="modal modal-contact-us" >
+	<section class="modal modal-contact-us visually-hidden" >
 		<h2>Напишите нам</h2>
 		<form class="contact-us" method="post" action="https://echo.htmlacademy.ru">
 			<p class="contact-us-item">
@@ -108,10 +111,12 @@
 				<li><a href="#" class="social-button" aria-label="Мы в Instagram"><img src="img/insta-icon.svg" alt="instagram logo icon"></a></li>
 			</ul>
 		</div>
-		<p class="footer">
-			<b>Давайте дружить, это выгодно!</b><br>
-			<span>Скидка 10% для друзей из социальных сетей.</span>
-		</p>
+		<div class="footer-discount">
+			<p class="footer">
+				<b>Давайте дружить, это выгодно!</b><br>
+				<span>Скидка 10% для друзей из социальных сетей.</span>
+			</p>
+		</div>
 	</footer>
   </body>
 </html>

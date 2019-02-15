@@ -18,9 +18,30 @@ a {
 .main-navigator {
 	font-size: 16px;
 	line-height: 24px; 
-
+	
+	width:  100%;
 	color: #283136;
+	padding-top: 49px;
+	padding-bottom: 29px;
 	background-color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	/*min-height: 545px;*/
+}
+
+.top-container {
+	width: 1160px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 }
 
 .main-header-logo-large {
@@ -28,7 +49,7 @@ a {
 	line-height: 55px;
 
 	text-align: center;
-	vertical-align: center;
+	margin:0px;
 	padding: 115px 0px 115px 0px;
 }
 
@@ -43,6 +64,23 @@ a {
 
 .main-header-logo img:active {
 	opacity: 0.3;
+}
+
+.site-navigation {
+	width: 440px;
+	margin: 0;
+	padding: 0;
+}
+
+.user-navigation {
+	width: 160px;
+	margin: 0;
+	padding: 0;
+	text-align: right; /*правильно?*/
+}
+
+.user-navigation a {
+	padding-left: 15px; /*уточнить какой должен быть оступ от иконки корзины до надписи "корзина"*/
 }
 
 .site-navigation,
@@ -71,12 +109,30 @@ a {
 	border-bottom: 2px solid #fb565a;
 }
 
+
+
+.services {
+	min-height: 350px;
+	width: 1160px;
+	padding: 0;
+	margin: 0 auto;
+	align-items: center;
+
+}
+
 .services-list {
 	list-style: none;
+	min-height: 350px;
+	padding: 0px;
+	
+	display: flex;
+	justify-content: space-between;
 }
 
 .service-item {
-	text-align: center;
+	width: 300px;
+	text-align: left;
+
 }
 
 .service-item h3 {
@@ -84,6 +140,11 @@ a {
 	line-height: 30px;
 	text-transform: uppercase;
 }
+
+.service-item p {
+	margin-bottom: 35px;
+}
+
 
 .modal {
 	/*display: none; а где он на макете?*/
@@ -164,6 +225,7 @@ a {
 	color: #ffffff;
 	vertical-align: middle;
 	text-transform: uppercase;
+	padding: 20px 40px;
 
 	border: none;
 }
@@ -214,6 +276,13 @@ a {
 	border: none;
 }
 
+.catalog-left-filters {
+	margin: 0;
+	padding: 0;
+	min-height: 510px;
+	width: 260px;
+}
+
 .catalog-left-filters legend {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -223,6 +292,7 @@ a {
 
 .catalog-left-filters ul {
 	list-style: none;
+	padding: 0px;
 }
 
 .catalog-left-filters label {
@@ -237,6 +307,8 @@ a {
 	background-color: #eeeeee;
 	vertical-align: middle;
 	text-transform: uppercase;
+	width: 260px;
+	height: 50px;
 
 	border: none;
 }
@@ -251,8 +323,43 @@ a {
 	color: #959595;
 }
 
+.catalog-left-filters-grid {
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-left-filters-features {
+	margin: 0;
+	padding: 0;
+}
+
+
+.goods-results {
+	margin: 0px;
+	padding: 0px;
+	min-height: 617px;
+	width: 760px;
+}
+
 .goods-results ul {
 	list-style: none;
+}
+
+.catalog-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 760px;
+}
+
+.catalog-item {
+	width: 360px;
+	padding: 0px;
+	margin-bottom: 35px;
+	margin-right: 20px; /*разобраться - на макете 40px*/
+	/*margin: 35px 20px;*/
+	min-height: 616px;
 }
 
 li.catalog-item div.goods-results-item-details {
@@ -283,6 +390,8 @@ li.catalog-item:focus img.catalog-top-browser {
 div.goods-results-item-details {
 	background-color: #eeeeee;
 	text-align: center;
+	min-height: 232px;
+	font-size: 16;
 }
 
 .catalog-item-header h3{
@@ -294,7 +403,6 @@ div.goods-results-item-details {
 }
 
 
-
 .catalog-item-price {
 	font: inherit;
 	text-align: center;
@@ -304,8 +412,9 @@ div.goods-results-item-details {
 	line-height: 18px;
 	vertical-align: middle;
 	text-transform: uppercase;
-
 	border: none;
+
+	padding: 20px 60px;
 }
 
 .catalog-item-price:hover,
@@ -318,11 +427,27 @@ div.goods-results-item-details {
 	/*тени?*/
 }
 
+.catalog-columns {
+	margin: 0px auto;
+	padding: 0px 20px;
+	display: flex;
+	width: 1160px;
+	justify-content: space-between;
+	/*align-content: center;*/
+	align-items: flex-start;
+}
+
 
 .main-footer {
   color: #000000;
 
   background-color: #ffffff;
+  min-height: 220px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  width: 1160px;
 }
 
 .footer b {
@@ -337,6 +462,11 @@ div.goods-results-item-details {
 	color: #444444;
 }
 
+.footer-social {
+	width: 260px;
+	padding: 0 20px;
+}
+
 .footer-social a {
 	text-align: center;
 	background-color: #e1e1e1;
@@ -346,6 +476,10 @@ div.goods-results-item-details {
 
 .footer-social ul {
 	list-style: none;
+}
+
+.footer-discount {
+	padding-left: 260px;
 }
 
 .visually-hidden {
