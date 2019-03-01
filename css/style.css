@@ -65,6 +65,7 @@ img {
 	text-align: center;
 	margin:0px;
 	padding: 69px 0px 108px 0px;
+	color: black;
 }
 
 .main-header-logo img {
@@ -81,23 +82,24 @@ img {
 }
 
 .site-navigation {
-    display: flex;
+	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 457px;
     margin: 0;
     padding: 0;
-    padding-top: 6px;
+    padding-top: 13px;
     padding-left: 4px;
+    min-height: 35px;
 }
 
 .site-navigation li {
-
+	margin-right: 18px;
 }
 
 .site-navigation a {
 	/*padding: 25px;*/
-	padding-right: 18px;
+	/*padding-right: 18px;*/
 
 }
 
@@ -318,6 +320,7 @@ img {
 	padding: 13px 39.5px;
 	display: inline-block;
 	border: none;
+	border-radius: 2px;
 }
 
 .service-item-button-website {
@@ -331,7 +334,8 @@ img {
 .service-item-button-website:active {
 	background-color: #d7373b;
 	color: #e37376;
-	/*box-shadow: inset 0 2px 2px -2px #c13135; при нажатии появляется тень?*/
+	border-top: 3px solid #c13135;
+	padding-top: 10px;
 }
 
 .service-item-button-mobileapp {
@@ -346,6 +350,8 @@ img {
 .service-item-button-mobileapp:active {
 	background-color: #00aa62;
 	color: #4dc491;
+	border-top: 3px solid #009958;
+	padding-top: 10px;
 }
 
 .service-item-button-presentation {
@@ -360,6 +366,8 @@ img {
 .service-item-button-presentation:active {
 	background-color: #e5a722;
 	color: #edc265;
+	border-top: 3px solid #ce961f;
+	padding-top: 10px;
 }
 
 hr.main-divide  {
@@ -374,7 +382,97 @@ hr.main-divide  {
 
 .filters fieldset {
 	border: none;
+	padding: 0;
+	margin: 0;
 }
+
+.filters fieldset:first-child {
+	margin-bottom: 57px;
+}
+
+.filters fieldset:nth-child(2) {
+	margin-bottom: 28px;
+}
+
+
+ul.filter {
+	margin:0;
+	padding: 0;
+}
+
+.filters-options {
+	margin-bottom: 19.6px;
+	padding-left: 36.5px;
+}
+
+.filters-options label {
+	position: relative;
+
+	display: block;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.filters-options-checkbox + label::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: -35px;
+	top: -1px;
+
+	background-image: url(../img/checkbox-off.svg);
+	opacity: 0.4;
+}
+
+.filters-options-checkbox:checked + label::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 23px;
+	left: -35px;
+	top: -1px;
+
+	background-image: url(../img/checkbox-on.svg);
+	opacity: 0.4;
+}
+
+
+.filters-options-checkbox:hover + label::before,
+.filters-options-checkbox:focus + label::before {
+	opacity: 1;
+}
+
+.filters-options-radio + label::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: -35px;
+	top: -2px;
+
+	background-image: url(../img/radio-off.svg);
+	opacity: 0.4;
+}
+
+.filters-options-radio:checked + label::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: -35px;
+	top: -2px;
+
+	background-image: url(../img/radio-on.svg);
+	opacity: 0.4;
+}
+
+.filters-options-radio:hover + label::before,
+.filters-options-radio:focus + label::before {
+	opacity: 1;
+}
+
 
 .catalog-left-filters-price {
 	margin: 0;
@@ -395,6 +493,8 @@ hr.main-divide  {
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 30px;
+	margin-bottom: 15px;
+/*	color: #283136;*/
 }
 
 .catalog-left-filters ul {
@@ -407,6 +507,7 @@ hr.main-divide  {
 	line-height: 20px;
 }
 
+
 .catalog-left-filters-button-show {
 	font: inherit;
 	text-align: center;
@@ -416,8 +517,10 @@ hr.main-divide  {
 	text-transform: uppercase;
 	width: 260px;
 	height: 50px;
+	margin-top: 31px;
 
 	border: none;
+	border-radius: 2px
 }
 
 .catalog-left-filters-button-show:hover,
@@ -428,13 +531,16 @@ hr.main-divide  {
 .catalog-left-filters-button-show:active {
 	background-color: #d5d5d5;
 	color: #959595;
+	border-top: 3px solid #bfbfbf;
+	height: 47px;
+	outline: none;
 }
 
-.catalog-left-filters-grid {
+/*.catalog-left-filters-grid {
 	margin: 0;
 	margin-top: 57px;
 	padding: 0;
-}
+}*/
 
 .catalog-left-filters-features {
 	margin: 0;
@@ -472,7 +578,7 @@ hr.main-divide  {
 .catalog-item {
 	width: 360px;
 	padding: 0px;
-	margin-bottom: 35px;
+	margin-bottom: 26px;
 	margin-right: 20px; /*разобраться - на макете 40px*/
 	/*margin: 35px 20px;*/
 	min-height: 616px;
@@ -519,12 +625,15 @@ hr.main-divide  {
 .goods-results-item-details {
 	position: absolute;
 	background-color: #eeeeee;
-	text-align: center;
+	align-items: center;
 	min-height: 231px;
 	font-size: 16px;
 	bottom: 6px;
 	width: 360px;
 	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
 }
 
 .goods-results-item:hover .goods-results-item-details,
@@ -532,11 +641,16 @@ hr.main-divide  {
 	opacity: 100;
 }
 
+.goods-results-item:focus .goods-results-item-details,
+.goods-results-item:focus .goods-results-item-picture:before {
+	opacity: 100;
+}
+
 .goods-results-item-details h3 {
 	text-transform: uppercase;
 }
 
-/*.goods-results-item-details h3:hover .goods-results-item-details,
+.goods-results-item-details h3:hover .goods-results-item-details,
 .goods-results-item-details h3:focus .goods-results-item-details {
 	opacity: 100;
 }
@@ -544,18 +658,36 @@ hr.main-divide  {
 .catalog-item-link:hover .goods-results-item-details,
 .catalog-item-link:focus .goods-results-item-details {
 	opacity: 100;
-}*/
+}
 
-.catalog-item-header h3{
+a.catalog-item-header {
+	padding-top: 25px;
+}
+
+p.catalog-item-description {
+	width: 205px;
+	text-align: center;
+	margin: 0;
+	padding-top: 16px;
+	padding-bottom: 30px;
+	color: #666666;
+	font-size: 16px;
+	line-height: 18px;
+
+}
+
+h3.catalog-item-link {
 	font: inherit;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
 	color: #000000;
+	margin: 0;
 }
 
 
 .catalog-item-price {
+	/*display: inline-block;*/
 	font: inherit;
 	text-align: center;
 	color: #ffffff;
@@ -565,8 +697,9 @@ hr.main-divide  {
 	vertical-align: middle;
 	text-transform: uppercase;
 	border: none;
+	border-radius: 2px;
 
-	padding: 20px 60px;
+	padding: 16px 61px;
 }
 
 .catalog-item-price:hover,
@@ -576,6 +709,8 @@ hr.main-divide  {
 
 .catalog-item-price:active {
 	background-color: #d7373b;
+	border-top: 3px solid #c13135;
+	padding-top: 13px;
 	/*тени?*/
 }
 
@@ -598,7 +733,7 @@ hr.main-divide  {
   min-height: 80px;
   display: flex;
   margin: 0 auto;
-  margin-top: 66px;
+  margin-top: 68px;
   margin-bottom: 80px;
   padding: 0;
   align-items: stretch;
@@ -627,13 +762,14 @@ hr.main-divide  {
 
 .social-button:active {
 	background-color: #d7373b;
-	/*тени?*/
+	border-top: 2px solid #c13135;
+	height: 74px;
+	padding-bottom: 2px;
 }
 
 .social-button:active path {
 	fill: #e37376;
 }
-
 
 
 .footer-social ul {
@@ -701,4 +837,3 @@ input[type="radio"].visually-hidden {
 	margin-right: auto;
 	margin-left: auto;
 }
-

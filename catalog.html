@@ -47,17 +47,17 @@
 					<fieldset class="catalog-left-filters-grid">
 						<legend>сетка:</legend>
 						<h3 class="visually-hidden">Фильтры сетки</h3>
-						<ul>
+						<ul class="filter">
 							<li class="filters-options">
-								<input class="filters-options-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+								<input class="visually-hidden filters-options-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
 								<label for="filter-adaptive">Адаптивная</label>
 							</li>
 							<li class="filters-options">
-								<input class="filters-options-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+								<input class="visually-hidden filters-options-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
 								<label for="filter-fixed">Фиксированная</label>
 							</li>
 							<li class="filters-options">
-								<input class="filters-options-input-radio" type="radio" name="grid" value="flexible" id="filter-flexible">
+								<input class="visually-hidden filters-options-radio" type="radio" name="grid" value="flexible" id="filter-flexible">
 								<label for="filter-flexible">Резиновая</label>
 							</li>
 						</ul>	
@@ -66,27 +66,27 @@
 					<fieldset class="catalog-left-filters-features">
 						<legend>особенности:</legend>
 						<h3 class="visually-hidden">Фильтры особенностей</h3>
-						<ul>
-							<li class="filter-options">
-								<input class="filter-options filter-options-checkbox" type="checkbox" name="features" value="slider" id="slider">
+						<ul class="filter">
+							<li class="filters-options">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="slider" id="slider">
 								<label for="slider">Слайдер</label>
 
 							</li>
-							<li class="filter-options">
-								<input class="filter-options filter-options-checkbox" type="checkbox" name="features" value="block-advantages" id="block-advantages">
+							<li class="filters-options">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="block-advantages" id="block-advantages">
 								<label for="block-advantages">Блок преимуществ</label>
 
 							</li>
-							<li class="filter-options">
-								<input class="filter-options filter-options-checkbox" type="checkbox" name="features" value="news" id="news">
+							<li class="filters-options">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="news" id="news">
 								<label for="news">Новости</label>
 							</li>
-							<li class="filter-options">
-								<input class="filter-options filter-options-checkbox" type="checkbox" name="features" value="gallery" id="gallery">
+							<li class="filters-options">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="gallery" id="gallery">
 								<label for="gallery">Галерея</label>
 							</li>
-							<li class="filter-options">
-								<input class="filter-options filter-options-checkbox" type="checkbox" name="features" value="basket" id="basket">
+							<li class="filters-options">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="basket" id="basket">
 								<label for="basket">Корзина</label>
 							</li>
 						</ul>
@@ -113,76 +113,82 @@
 									<h3 class="catalog-item-link">Sedona</h3>
 								</a>
 								<p class="catalog-item-description">Информационный сайт для туристов</p>
-								<a href="#" class="catalog-item-price">9900 РУБ.</a>
+								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>
 					</li>
 					<li class="catalog-item">
 						<article class="goods-results-item">
-							<img class="catalog-top-browser" src="img/browser.svg" alt="browser">
-							<img src="img/img-pink.jpg" alt="Пинк">
+							<div class="goods-results-item-picture">
+								<img src="img/img-pink.jpg" alt="Пинк">
+							</div>
 							<div class="goods-results-item-details">
 								<a href="#" class="catalog-item-header" aria-label="описание товара">
-									<h3>PINK APP</h3>
+									<h3 class="catalog-item-link">PINK APP</h3>
 								</a>
 								<p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-								<a href="#" class="catalog-item-price">9900 РУБ.</a>
+								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>					
 					</li>
 					<li class="catalog-item">
 						<article class="goods-results-item">
-							<img class="catalog-top-browser" src="img/browser.svg" alt="browser">
-							<img src="img/img-barbershop.jpg" alt="Бородинский">
+							<div class="goods-results-item-picture">
+								<img src="img/img-barbershop.jpg" alt="Бородинский">
+							</div>
 							<div class="goods-results-item-details">	
 								<a href="#" class="catalog-item-header" aria-label="описание товара">
-									<h3>BARBERSHOP</h3>
+									<h3 class="catalog-item-link">BARBERSHOP</h3>
 								</a>						
 								<p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
-								<a href="#" class="catalog-item-price">9900 РУБ.</a>
+								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>
 					</li>
 					<li class="catalog-item">
 						<article class="goods-results-item">
-							<img class="catalog-top-browser" src="img/browser.svg" alt="browser">
-							<img src="img/img-mishka.jpg" alt="Мишка">
+							<div class="goods-results-item-picture">
+								<img src="img/img-mishka.jpg" alt="Мишка">
+							</div>
 							<div class="goods-results-item-details">	
 								<a href="#" class="catalog-item-header" aria-label="описание товара">
-									<h3>MISHKA</h3>
+									<h3 class="catalog-item-link">MISHKA</h3>
 								</a>							
 								<p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
-								<a href="#" class="catalog-item-price">9900 РУБ.</a>
+								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>
 					</li>
 					<li class="catalog-item">
 						<article class="goods-results-item">
-							<img class="catalog-top-browser" src="img/browser.svg" alt="browser">
-							<img src="img/img-aplus.jpg" alt="Аплюс">
+							<div class="goods-results-item-picture">
+								<img src="img/img-aplus.jpg" alt="Аплюс">
+							</div>
 							<div class="goods-results-item-details">						
 								<a href="#" class="catalog-item-header" aria-label="описание товара">
-									<h3>A PLUS</h3>
+									<h3 class="catalog-item-link">A PLUS</h3>
 								</a>			
 								<p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
-								<a href="#" class="catalog-item-price">9900 РУБ.</a>
+								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>
 					</li>
 					<li class="catalog-item">
 						<article class="goods-results-item">
-							<img class="catalog-top-browser" src="img/browser.svg" alt="browser">
-							<img src="img/img-kvast.jpg" alt="Кваст">
+							<div class="goods-results-item-picture">
+								<img src="img/img-kvast.jpg" alt="Кваст">
+							</div>
 							<div class="goods-results-item-details">	
 								<a href="#" class="catalog-item-header" aria-label="описание товара">
-									<h3>КВАСТ</h3>
+									<h3 class="catalog-item-link">КВАСТ</h3>
 								</a>							
 								<p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
-								<a href="#" class="catalog-item-price">9900 РУБ.</a>
+								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>
 					</li>
 				</ul>
+			<div class="good-results-navigation-buttons postponed" style="margin:0 auto;margin-top: 28px; height: 50px; width: inherit; "></div>
 			</section>
 		</div>	
 
@@ -190,7 +196,7 @@
 			<!-- на данный момент не требуется -->
 		</div>
 
-		<div class="main-map postponed">
+		<div class="main-map postponed" style="margin-top:60px;">
 			<!-- на данный момент не требуется -->
 		</div>
 
