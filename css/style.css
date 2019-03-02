@@ -239,25 +239,63 @@ img {
 
 
 .modal {
-	/*display: none; а где он на макете?*/
+	position: fixed;
+
 	color: #000000;
 	background-color: #ffffff;
 }
 
+.modal h2 {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 67px;
+	margin-bottom: 38px;
+}
+
+.modal-contact-us {
+	width: 758px;
+	/*min-height:591px;*/
+	padding: 101px; 
+	padding-top: 0;
+	padding-bottom: 84px;
+	/*padding-top: 131px;*/
+	bottom: 120px;
+	left: 50%;
+	margin-left: -480px;
+	box-shadow: -5px 20px 41px rgba(0, 0, 0, 0.7);
+}
+p.contact-us-item {
+	margin: 0;
+}
+
 .modal label{
 	font-weight: bold;
+	font-size: 16px;
 	line-height: 18px;
+}
+
+.contact-us-requisits {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 .contact-us input[type="text"],
 .contact-us input[type="password"],
 .contact-us textarea {
-	/*font: inherit;*/
+	box-sizing: border-box;
 	color: #000000;
 
 	background-color: #ffffff;
 	border: 2px solid #d7dcde;
-	padding: 17px 18px 14px;
+	padding: 14px 14px 14px 12px;
+	width: 360px;
+	margin-top: 7px;
+
 }
 
 .contact-us input[type="text"]:hover,
@@ -271,7 +309,7 @@ img {
 .contact-us textarea:focus {
 	border: 2px solid #000000;
 	color: #000000;
-	outline: none; /*допустимо?*/
+	outline: none;
 }
 
 .contact-us input[type="text"]:invalid,
@@ -280,21 +318,32 @@ img {
 	color: #e74246;
 }
 
+.contact-us textarea {
+	width: 100%;
+	padding: 10px 14px 14px 12px;
+	min-height: 116px;
+	margin-bottom: 42px;
+}
+
 .button-submit {
-	/*состояния не описаны в styleguide*/
 	font: inherit;
 	text-align: center;
 	color: #ffffff;
 	background-color: #e74246;
 	vertical-align: middle;
 	text-transform: uppercase;
-
+	width: 260px;
+	height: 50px;
 	border: none;
 }
 
 .button-close {
+	position: absolute;
+	top: 77px;
+    right: 84px;
 	background-color: #ffffff;
 	border: none;
+	cursor: pointer;
 }
 
 .button-close img {
@@ -307,6 +356,7 @@ img {
 
 .button-close img:active {
 	opacity: 0.1;
+	outline: none;
 }
 
 

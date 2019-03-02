@@ -80,26 +80,25 @@
 			<!-- на данный момент не требуется -->
 		</section>
 
-	<section class="modal modal-contact-us visually-hidden" >
+	<section class="modal modal-contact-us" style="display:none">
+		<button class="button button-close" type="button" aria-label="Закрыть"><img src="img/close-cross.svg" alt="закрыть"></button>	
 		<h2>Напишите нам</h2>
 		<form class="contact-us" method="post" action="https://echo.htmlacademy.ru">
-			<p class="contact-us-item">
-				<label for="contact-us-name">Ваше имя:</label>
-				<input id="contact-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-			</p>
-			<p class="contact-us-item">
-				<label for="contact-us-email">Ваш e-mail:</label>
-				<input id="contact-us-email" type="text" name="email" value="" placeholder="email@example.com">
-			</p>
+			<div class="contact-us-requisits">
+				<p class="contact-us-item">
+					<label for="contact-us-name">Ваше имя:</label> <br>
+					<input id="contact-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+				</p>
+				<p class="contact-us-item">
+					<label for="contact-us-email">Ваш e-mail:</label> <br>
+					<input id="contact-us-email" type="text" name="email" value="" placeholder="email@example.com">
+				</p>
+			</div>
 			<p class="contact-us-item">
 				<label for="contact-us-text">Текст письма:</label>
 				<textarea id="contact-us-text" name="letter-text" placeholder="В свободной форме."></textarea>
 			</p>
 		<button class="button button-submit" type="submit">Отправить</button>		
-		<button class="button button-close" type="button" aria-label="Закрыть"><img src="img/close-cross.svg" alt="закрыть"></button>		
-		<!-- <input type="button" name="close" class="button-close" aria-label="Закрыть"> -->
-
-
 		</form>
 	</section>
 
