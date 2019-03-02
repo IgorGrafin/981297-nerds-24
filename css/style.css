@@ -292,6 +292,7 @@ p.contact-us-item {
 
 	background-color: #ffffff;
 	border: 2px solid #d7dcde;
+	border-radius: 2px;
 	padding: 14px 14px 14px 12px;
 	width: 360px;
 	margin-top: 7px;
@@ -307,7 +308,7 @@ p.contact-us-item {
 .contact-us input[type="text"]:focus,
 .contact-us input[type="password"]:focus,
 .contact-us textarea:focus {
-	border: 2px solid #000000;
+	border: 2px solid #b4b9bb;
 	color: #000000;
 	outline: none;
 }
@@ -335,6 +336,21 @@ p.contact-us-item {
 	width: 260px;
 	height: 50px;
 	border: none;
+	border-radius: 2px;
+}
+.button-submit:hover,
+.button-submit:focus {
+	/*нет в стайлгайде*/
+	background-color: #fb565a;
+}
+
+.button-submit:active {
+	/*нет в стайлгайде*/
+	background-color: #d7373b;
+	color: #e37376;
+	border-top: 3px solid #c13135;
+	padding-bottom: 3px;
+	outline: none;
 }
 
 .button-close {
@@ -585,12 +601,6 @@ ul.filter {
 	height: 47px;
 	outline: none;
 }
-
-/*.catalog-left-filters-grid {
-	margin: 0;
-	margin-top: 57px;
-	padding: 0;
-}*/
 
 .catalog-left-filters-features {
 	margin: 0;
