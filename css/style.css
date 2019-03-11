@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px; 
     /*font-weight: 700;  как узнать  font-weight?*/
@@ -268,6 +268,7 @@ img {
 }
 p.contact-us-item {
     margin: 0;
+    width: 360px;
 }
 
 .modal label{
@@ -308,7 +309,7 @@ p.contact-us-item {
 .contact-us input[type="text"]:focus,
 .contact-us input[type="password"]:focus,
 .contact-us textarea:focus {
-    border: 2px solid #b4b9bb;
+    border: 2px solid #000000;
     color: #000000;
     outline: none;
 }
@@ -477,6 +478,10 @@ ul.filter {
     display: block;
 
     cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -510,6 +515,17 @@ ul.filter {
     opacity: 1;
 }
 
+.filters-options-checkbox:disabled + label {
+    color: rgba(40,49,54,0.3);
+}
+
+.filters-options-checkbox:disabled:checked + label::before,
+.filters-options-checkbox:disabled + label::before {
+    opacity: 0.1;
+}
+
+
+
 .filters-options-radio + label::before {
     content: "";
     position: absolute;
@@ -537,6 +553,15 @@ ul.filter {
 .filters-options-radio:hover + label::before,
 .filters-options-radio:focus + label::before {
     opacity: 1;
+}
+
+.filters-options-radio:disabled + label {
+    color: rgba(40,49,54,0.3);
+}
+
+.filters-options-radio:disabled:checked + label::before,
+.filters-options-radio:disabled + label::before {
+    opacity: 0.1;
 }
 
 
@@ -708,11 +733,6 @@ ul.filter {
 
 .goods-results-item-details h3 {
     text-transform: uppercase;
-}
-
-.goods-results-item-details h3:hover .goods-results-item-details,
-.goods-results-item-details h3:focus .goods-results-item-details {
-    opacity: 100;
 }
 
 .catalog-item-link:hover .goods-results-item-details,
