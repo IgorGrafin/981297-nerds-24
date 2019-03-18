@@ -549,21 +549,38 @@ img {
 }
 
 .main-map-address {
-    width: 319px;
+    width: 269px;
     min-height: 308px;
     position: relative;
     background-color: #ffffff;
-    bottom: 387px;
+    bottom: 368px;
     right: -140px;
+    padding-left: 50px;
+
 }
 
-.main-map-address h2 {
-    
+.main-map-address h3 {
+    padding: 0;
+    padding-top: 49px;
+    padding-bottom:23px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 .main-map-address p {
     padding: 0;
     margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 205px;
+    padding-bottom: 18px;
+}
+
+.main-map-button {
+    margin-top:5px;
+    width: 220px;
 }
 
 
@@ -842,11 +859,11 @@ hr.main-divide  {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1018,13 +1035,11 @@ ul.filter {
 .catalog-left-filters legend {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 21px;
     margin-bottom: 15px;
 /*  color: #283136;*/
 }
-
-
 
 .catalog-left-filters ul {
     list-style: none;
@@ -1083,11 +1098,79 @@ ul.filter {
 
 .goods-results ul {
     list-style: none;
+    position: relative;
 }
 
-.sorting-section {
-    width: 790px;
+.goods-results-sorting {
+    width: 760px;
     min-height: 74px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.goods-results-sorting span {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sorting-by-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.sorting-by-list li {
+    text-transform: uppercase;
+    font-size: 0px;
+    padding-right: 26px;
+    
+}
+
+.sorting-by-list a {
+    opacity: 0.3;
+}
+
+.sorting-by-list a:hover {
+    opacity: 0.6;
+}
+
+.sorting-list-selected a,
+.sorting-list-selected a:hover,
+.sorting-by-list a:active {
+    opacity: 1;
+}
+
+.sorting-by-list a {
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.sorting-descending::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    right: 28px;
+    top: 4px;
+    background-image: url(../img/icon-down-dir.svg);
+}
+
+.sorting-ascending::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    top: 3px;
+    right: 1px;
+    background-image: url(../img/icon-up-dir.svg);
 }
 
 .catalog-list {
@@ -1192,7 +1275,8 @@ p.catalog-item-description {
     color: #666666;
     font-size: 16px;
     line-height: 18px;
-
+    max-height: 425px;
+    overflow-y: auto;
 }
 
 h3.catalog-item-link {
@@ -1240,10 +1324,76 @@ h3.catalog-item-link {
     display: flex;
     width: 1160px;
     justify-content: space-between;
-    /*align-content: center;*/
     align-items: flex-start;
 }
 
+.goods-results-pages {
+    margin: 0 auto;
+    margin-top:46px;
+    height: 50px;
+    width: inherit;
+    padding: 0;
+}
+
+.results-pages-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+
+}
+
+ul.results-pages-list  {
+    position:static;
+}
+
+.results-pages-list li {
+    padding-right: 11px;
+}
+
+.button-page-number,
+.button-page-next {
+    padding: 0;
+    margin: 0;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-right: 21px;
+    padding-left: 20px;
+    color: #000000;
+    background-color: #eeeeee;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.button-page-number-selected {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-right: 17px;
+    padding-left: 18px;
+    border: 3px solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+
+
+.button-page-next {
+    padding: 0 78px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+}
+
+.button-page-number:hover,
+.button-page-next:hover,
+.button-page-number:focus,
+.button-page-next:focus {
+    background-color: #dfdfdf;
+}
+
+.button-page-number-selected:hover {
+    background-color: #ffffff
+}
 
 .main-footer {
   color: #000000;

@@ -31,9 +31,7 @@
 
 	<!-- основное содержимое сайта --> 
 	<main class="container">
-		<nav class="catalog-upper-filters postponed">
-			<!-- на данный момент не требуется -->
-		</nav>
+
 		
 		<div class="catalog-columns">
 			<!-- левый навигатор фильтров --> 
@@ -42,12 +40,12 @@
 				<form class="filters" method="get" action="https://echo.htmlacademy.ru">
 
 					<fieldset class="filter-item">
-						<legend>Стоимость:</legend>
+						<legend class="price-legend">Стоимость:</legend>
 						<h3 class="visually-hidden">Фильтр стоимости</h3>
 						<div class="range-filter">
 							<div class="range-controls">
 								<div class="scale">
-									<div class="bar" style="margin-left: 20%; width: 30%"></div>
+									<div class="bar"></div>
 								</div>
 								<div class="toggle toggle-min"></div>
 								<div class="toggle toggle-max"></div>
@@ -63,7 +61,7 @@
 						<h3 class="visually-hidden">Фильтры сетки</h3>
 						<ul class="filter">
 							<li class="filters-options">
-								<input class="visually-hidden filters-options-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+								<input class="visually-hidden filters-options-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
 								<label for="filter-adaptive">Адаптивная</label>
 							</li>
 							<li class="filters-options">
@@ -82,7 +80,7 @@
 						<h3 class="visually-hidden">Фильтры особенностей</h3>
 						<ul class="filter">
 							<li class="filters-options">
-								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="slider" id="slider">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="slider" id="slider" checked>
 								<label for="slider">Слайдер</label>
 
 							</li>
@@ -92,7 +90,7 @@
 
 							</li>
 							<li class="filters-options">
-								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="news" id="news">
+								<input class="visually-hidden filters-options filters-options-checkbox" type="checkbox" name="features" value="news" id="news" checked>
 								<label for="news">Новости</label>
 							</li>
 							<li class="filters-options">
@@ -112,8 +110,29 @@
 			
 			<section class="goods-results">
 				<h2 class="visually-hidden">Результат отбора</h2>
-				<div class="sorting-section postponed" style="width: 760px; margin-left:0">
-					<!-- позже -->
+				<div class="goods-results-sorting">
+					<span>Сортировать:</span>
+					<ul class="sorting-by-list">
+						<li class="sorting-list-selected">
+							<a href="">По цене</a>
+						</li>
+						<li>
+							<a href="">По типу</a>
+						</li>
+						<li>
+							<a href="">По названию</a>
+						</li>
+						<li class="sorting-list-selected">
+							<a class="sorting-descending" href="#">
+								<span class="visually-hidden">По убыванию</span>
+							</a>
+						</li>
+						<li>
+							<a class="sorting-ascending" href="#">
+								<span class="visually-hidden">По возрастанию</span>
+							</a>
+						</li>
+					</ul>
 				</div>
 				<ul class="catalog-list">
 					<li class="catalog-item">
@@ -126,7 +145,7 @@
 								<a href="#" class="catalog-item-header" aria-label="описание товара">
 									<h3 class="catalog-item-link">Sedona</h3>
 								</a>
-								<p class="catalog-item-description">Информационный сайт для туристов Информационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристовИнформационный сайт для туристов</p>
+								<p class="catalog-item-description">Информационный сайт для туристов</p>
 								<a href="#" class="catalog-item-price">9 900 РУБ.</a>
 							</div>
 						</article>
@@ -202,13 +221,16 @@
 						</article>
 					</li>
 				</ul>
-			<div class="good-results-navigation-buttons postponed" style="margin:0 auto;margin-top: 28px; height: 50px; width: inherit; "></div>
+			<div class="goods-results-pages">
+				<ul class="results-pages-list">
+					<li><a class="button-page-number button-page-number-selected">1</a></li>
+					<li><a href="#" class="button-page-number">2</a></li>
+					<li><a href="#" class="button-page-number">3</a></li>
+					<li><a href="#" class="button-page-next">следующая</a></li>
+				</ul>
+			</div>
 			</section>
 		</div>	
-
-		<div class="catalog-pages postponed">
-			<!-- на данный момент не требуется -->
-		</div>
 
 		<div class="main-map postponed" style="margin-top:60px;">
 			<!-- на данный момент не требуется -->
