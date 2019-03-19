@@ -347,7 +347,10 @@ img {
     color: rgba(255, 255, 255, 0.3);
   
     background-color: #d7373b;
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+    /*box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;*/
+
+    border-top: 3px solid #c13135;
+    padding-top: 13px;
 }
 
 
@@ -513,6 +516,7 @@ img {
     margin: 0 auto;
     vertical-align: middle;
     opacity: 0.2;
+
 }
 
 
@@ -532,6 +536,7 @@ img {
 .main-examples-logos-wrapper {
     width: 300px;
     text-align: center;
+    position: relative;
 }
 
 .main-examples-logos-wrapper:first-child {
@@ -542,11 +547,28 @@ img {
     width: 280px;
 }
 
+.main-examples-logos-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    width: 2px;
+    height: 52px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #eee;
+}
+
+.main-examples-logos-wrapper:first-child:before {
+    display: none;
+}
+
 .main-map {
     margin: 0 auto;
     /*width: 1440px;*/
     width: 100%;
-    margin-top: 80px;
+    margin-top: 41px;
     height: 416px;
 }
 
@@ -586,9 +608,49 @@ img {
     width: 220px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .modal {
     position: fixed;
+    display: none;
 
     color: #000000;
     background-color: #ffffff;
@@ -624,6 +686,16 @@ p.contact-us-item {
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .contact-us-requisits {
@@ -794,14 +866,16 @@ hr.main-divide  {
     margin: 0 auto;
 }
 
-/*вставка*/
+hr:last-of-type {
+    margin-bottom: 80px;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
   
   border: none;
   
-  /* Для демонстрации */
   width: 260px;
   margin: 50px auto; 
 }
@@ -1079,10 +1153,10 @@ ul.filter {
 .catalog-left-filters-button-show:active {
     background-color: #d5d5d5;
     color: #959595;
-    border-top: 2px solid #bfbfbf;
+    border-top: 3px solid #bfbfbf;
     height: 47px;
     outline: none;
-    padding-bottom: 2px;
+    padding-bottom: 7px;
 }
 
 .catalog-left-filters-features {
