@@ -611,8 +611,8 @@ img {
 .main-map-address {
     position: relative;
     /*right: -140px;*/
-    right: -509px;
-    bottom: 368px;
+	right: -333px;
+	bottom: 372px;
 
     width: 269px;
     min-height: 308px;
@@ -645,6 +645,13 @@ img {
 .main-map-button {
     width: 220px;
     margin-top: 20px;
+}
+
+iframe {
+	z-index: 1;
+	width: 100%;
+	height: 416px;
+	border: 0;
 }
 
 @keyframes bounce {
