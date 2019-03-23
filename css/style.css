@@ -34,7 +34,7 @@ img {
             flex-direction: column;
 
     width: 100%;
-    padding-top: 49px;
+    padding-top: 48px;
     padding-bottom: 0;
 
     color: #283136;
@@ -709,13 +709,28 @@ img {
     height: 416px;
     margin: 0 auto;
 /*    margin-top: 41px;*/
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
+    background-position: center center;
+	position: relative;
+}
+
+.main-map:before {
+	content: '';
+	position: absolute;
+	background-image: url(../img/map-marker.png);
+	background-repeat: no-repeat;
+	height: 231px;
+	width: 190px;
+	left: 1190px;
+    bottom: 97px;
 }
 
 .main-map-address {
     position: relative;
     /*right: -140px;*/
 	right: -510px;
-	bottom: 368px;
+	bottom: -55px;
 
     width: 269px;
     min-height: 308px;
@@ -966,7 +981,7 @@ p.contact-us-item {
 }
 
 .contact-us textarea {
-    width: 100%;
+    width: 760px;
     min-height: 116px;
     margin-bottom: 42px;
     padding: 10px 14px 14px 12px;
@@ -1029,7 +1044,6 @@ p.contact-us-item {
 
 
 .service-item-button {
-    /*общие настройки ссылок "заказать"*/
     font: inherit;
 
     display: inline-block;
@@ -1556,9 +1570,8 @@ ul.filter {
 
 .catalog-item {
     width: 360px;
-    /*margin: 35px 20px;*/
     min-height: 616px;
-    margin-right: 20px; /*разобраться - на макете 40px*/
+    margin-right: 20px;
     margin-bottom: 26px;
     padding: 0;
 }
@@ -1572,6 +1585,7 @@ ul.filter {
 .goods-results-item {
     position: relative;
 }
+
 
 .goods-results-item-picture {
     position: relative;
@@ -1590,14 +1604,14 @@ ul.filter {
     content: '';
 
     opacity: .12;
-    /*
-    width: 15px;
-    height: 15px;*/
-    /*background: #ff0000;*/
+
     background-image: url('../img/browser.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    /*background-color: #ff0000;*/
+}
+
+li.catalog-item:hover .goods-results-item-details {
+	box-shadow: -1px 7px 40px -12px rgba(56,53,56,1);
 }
 
 .goods-results-item-picture:hover:before {
@@ -1689,7 +1703,6 @@ h3.catalog-item-link {
 
 
 .catalog-item-price {
-    /*display: inline-block;*/
     font: inherit;
     font-size: 16px;
     line-height: 18px;
@@ -1716,7 +1729,6 @@ h3.catalog-item-link {
 
     border-top: 3px solid #c13135;
     background-color: #d7373b;
-    /*тени?*/
 }
 
 .catalog-columns {
