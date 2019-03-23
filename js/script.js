@@ -25,7 +25,6 @@ popup_close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-	evt.preventDefault();
 	if (!name_field.value || !email_field.value || !text_fiel.value) {
 	evt.preventDefault();
 	popup.classList.remove("modal-error");
